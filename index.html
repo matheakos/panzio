@@ -4,13 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sajat.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="sajat.css">
     <title>Balaton Panzió</title>
 </head>
 <body>
     <div class="container">
-
+        <div class="py-5 text-center display-4">
+            Balaton Panzió - Szobafoglalás
+        </div>
+        <div class="text-center">
+            <form>
+                <table class="table w-75 m-auto">
+                    <tr>
+                        <td><p>Érkezés dátuma:</p></td>
+                        <td><p>Távozás dátuma:</p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="date" id="erkezes"></td>
+                        <td><input type="date" id="tavozas"></td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">Szoba típusa:</td>
+                        <td class="text-left">
+                            <p><input type="radio">Egyágyas - 9000 Ft/éj</p>
+                            <p><input type="radio">Két ágyas - 15000 Ft/éj</p>
+                            <p><input type="radio">Kétágyas 1 pótággyal - 18000 Ft/éj</p>
+                            <p><input type="radio">Kétágyas 2 pótággyal - 20000 Ft/éj</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </div>
 </body>
 </html>
