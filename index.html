@@ -9,8 +9,8 @@
     <title>Balaton Panzió</title>
     <script src="panzio.js"></script>
 </head>
-<body>
-    <div class="container">
+<body onload="betolteskor()">
+    <div class="container" id="alap">
         <div class="py-5 text-center display-4">
             Balaton Panzió - Szobafoglalás
         </div>
@@ -42,10 +42,10 @@
                         <td class="text-left">
                             <p>
                                 <select id="vendegszam">
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
                                 </select>
                             </p>
                             <p>
@@ -71,22 +71,25 @@
                             <p>Fürdő szolgáltatások:</p>
                         </td>
                         <td class="text-left">
-                            <p><input type="checkbox" name="radio"> Beltéri medencék - 800 Ft/fő/nap</p>
-                            <p><input type="checkbox" name="radio"> Kültéri medencék - 800 Ft/fő/nap</p>
-                            <p><input type="checkbox" name="radio"> Szauna belépő - 800 Ft/fő/nap</p>
-                            <p><input type="checkbox" name="radio"> Teljes belépő - 2000 Ft/fő/nap</p>
+                            <p><input type="checkbox" name="szolg" id="belteri"> Beltéri medencék - 800 Ft/fő/nap</p>
+                            <p><input type="checkbox" name="szolg" id="kulteri"> Kültéri medencék - 800 Ft/fő/nap</p>
+                            <p><input type="checkbox" name="szolg" id="szauna"> Szauna belépő - 800 Ft/fő/nap</p>
+                            <p><input type="checkbox" name="szolg" id="teljesbelepo"> Teljes belépő - 2000 Ft/fő/nap</p>
                         </td>
                     </tr>
                     <tr>
                         <td class="align-middle">
                             <p>Egyéb kérdés, kívánság:</p>
                         </td>
-                        <td class="text-left"><textarea name="" id="" cols="40" rows="5" style="resize: none;"></textarea></td>
+                        <td class="text-left"><textarea name="" id="egyeb" cols="40" rows="5" style="resize: none;"></textarea></td>
                     </tr>
                 </table>
                 <div class="text-center py-5"><input class="btn btn-primary font-weight-bold" type="button" onclick="kalkulacio()" value="Költségkalkuláció"></div>
             </form>
         </div>
+    </div>
+    <div id="ajanlat" class="container">
+        <h1 class="text-center">Ajánlat:</h1>
     </div>
 </body>
 </html>

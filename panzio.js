@@ -1,3 +1,7 @@
+function betolteskor(){
+    document.getElementById("ajanlat").style.display = "none";
+}
+
 function kalkulacio(){
     var Erk = document.getElementById("erkezes").value;
     var Tav = document.getElementById("tavozas").value;
@@ -51,9 +55,33 @@ function kalkulacio(){
         Ellatas = 4500;
     }
 
+    var Furdo = 0;
+    
+    if(document.getElementById("belteri").checked == true){
+        Furdo += 800;
+    }
+
+    if(document.getElementById("kulteri").checked == true){
+        Furdo += 800;
+    }
+
+    if(document.getElementById("szauna").checked == true){
+        Furdo += 800;
+    }
+
+    if(document.getElementById("teljesbelepo").checked == true){
+        Furdo = 2000;
+    }
+
+    var Egyebek = document.getElementById("egyeb").value;
 
     console.log(napokszama);
     console.log(SzobaAr);
     console.log(vendegekSzama);
     console.log(Eletkorok);
+    console.log(Ellatas);
+    console.log(Furdo);
+    console.log(Egyebek);
+    document.getElementById("ajanlat").style.display = "block";
+    document.getElementById("alap").style.display = "none";
 }
